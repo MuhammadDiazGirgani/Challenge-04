@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaPlay } from 'react-icons/fa';
 import { BsArrowRight } from 'react-icons/bs';
-import './posts/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const apiKey = '08a7cbb1d8fe54cae31787a3e5bc00d2';
@@ -138,6 +137,7 @@ function Home() {
         <div className="row row-cols-1 row-cols-md-4 g-4 mt-4">
   {movies.map((movie) => (
     <div key={movie.id} className="col">
+      
       <Link to={`/movie/${movie.id}`} style={{ textDecoration: 'none' }}>
         <div className="card h-100" style={{ border: '1px solid #ddd', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>
           <img
