@@ -138,7 +138,6 @@ function Home() {
         <div className="row row-cols-1 row-cols-md-4 g-4 mt-4">
   {movies.map((movie) => (
     <div key={movie.id} className="col">
-      {/* Use Link to navigate to the movie details page */}
       <Link to={`/movie/${movie.id}`} style={{ textDecoration: 'none' }}>
         <div className="card h-100" style={{ border: '1px solid #ddd', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>
           <img
